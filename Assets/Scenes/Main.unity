@@ -273,6 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 100
+  dashMultiplier: 20
   mode: 1
 --- !u!50 &620026627
 Rigidbody2D:
