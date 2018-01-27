@@ -16,7 +16,7 @@ public class Player : MonoBehaviour {
 
   public int maxStamina = 1;
   private float stamina = 1f;
-  public float staminRegenPerSecond = 1f;
+  public float staminaRegenPerSecond = 1f;
   public float dashStaminaCost = 1f;
 
   void Start () {
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour {
   }
 
   void Update () {
-    stamina = Mathf.Min(maxStamina, stamina + (Time.deltaTime * staminRegenPerSecond));
+    stamina = Mathf.Min(maxStamina, stamina + (Time.deltaTime * staminaRegenPerSecond));
 
     var horizontal = Input.GetAxis("Horizontal");
     var vertical = Input.GetAxis("Vertical");
