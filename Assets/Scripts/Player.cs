@@ -19,6 +19,8 @@ public class Player : MonoBehaviour {
   public float staminaRegenPerSecond = 1f;
   public float dashStaminaCost = 1f;
 
+  public float airGravityScale = 50f;
+
   void Start () {
     rb = GetComponent<Rigidbody2D>();
     stamina = maxStamina;
@@ -30,6 +32,8 @@ public class Player : MonoBehaviour {
     var horizontal = Input.GetAxis("Horizontal");
     var vertical = Input.GetAxis("Vertical");
 
+    var amt = thrust * speed;
+
     var direction = new Vector2();
     if (horizontal < 0) {
       direction += Vector2.left;
@@ -37,23 +41,29 @@ public class Player : MonoBehaviour {
     if (horizontal > 0) {
       direction += Vector2.right;
     }
-    if (vertical < 0) {
-      direction += Vector2.down;
-    }
-    if (vertical > 0) {
-      direction += Vector2.up;
+    if (transform.position.y < 0) {
+      if (vertical < 0) {
+        direction += Vector2.down;
+      }
+      if (vertical > 0) {
+        direction += Vector2.up;
+      }
+
+      if (Input.GetKeyDown("space") && stamina >= dashStaminaCost) {
+        stamina -= dashStaminaCost;
+        amt *= dashMultiplier;
+      }
+
+      rb.gravityScale = 0;
+    } else {
+      rb.gravityScale = airGravityScale;
     }
     direction = direction.normalized;
 
-    var amt = thrust * speed;
-    if (Input.GetKeyDown("space") && stamina >= dashStaminaCost) {
-      stamina -= dashStaminaCost;
-      amt *= dashMultiplier;
-    }
     rb.AddForce(direction * amt, mode);
 
     var scale = transform.localScale;
-    if ((rb.velocity.x > 0.01 || rb.velocity.x < -0.01) && Mathf.Sign(rb.velocity.x) != Mathf.Sign(scale.x)) {
+    if ((direction.x > 0.01 || direction.x < -0.01) && Mathf.Sign(direction.x) != Mathf.Sign(scale.x)) {
       scale.x = -scale.x;
     }
     transform.localScale = scale;
