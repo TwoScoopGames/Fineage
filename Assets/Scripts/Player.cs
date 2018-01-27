@@ -14,6 +14,11 @@ public class Player : MonoBehaviour {
   public float dashMultiplier = 10f;
   public ForceMode2D mode = ForceMode2D.Force;
 
+  public int maxStamina = 1;
+  public int speed = 1;
+  public int attack = 1;
+  public int defense = 1;
+
   void Update () {
     var horizontal = Input.GetAxis("Horizontal");
     var vertical = Input.GetAxis("Vertical");
@@ -31,7 +36,7 @@ public class Player : MonoBehaviour {
     if (vertical > 0) {
       direction += Vector2.up;
     }
-    var amt = thrust;
+    var amt = thrust * speed;
     if (Input.GetKeyDown("space")) {
       amt *= dashMultiplier;
     }
