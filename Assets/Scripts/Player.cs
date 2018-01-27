@@ -36,6 +36,8 @@ public class Player : MonoBehaviour {
     if (vertical > 0) {
       direction += Vector2.up;
     }
+    direction = direction.normalized;
+
     var amt = thrust * speed;
     if (Input.GetKeyDown("space")) {
       amt *= dashMultiplier;
