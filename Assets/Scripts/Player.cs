@@ -43,7 +43,7 @@ public class Player : MonoBehaviour {
     rb.AddForce(direction * amt, mode);
 
     var scale = transform.localScale;
-    if (Mathf.Sign(rb.velocity.x) != Mathf.Sign(scale.x)) {
+    if ((rb.velocity.x > 0.01 || rb.velocity.x < -0.01) && Mathf.Sign(rb.velocity.x) != Mathf.Sign(scale.x)) {
       scale.x = -scale.x;
     }
     transform.localScale = scale;
