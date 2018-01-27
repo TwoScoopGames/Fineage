@@ -41,5 +41,11 @@ public class Player : MonoBehaviour {
       amt *= dashMultiplier;
     }
     rb.AddForce(direction * amt, mode);
+
+    var scale = transform.localScale;
+    if (Mathf.Sign(rb.velocity.x) != Mathf.Sign(scale.x)) {
+      scale.x = -scale.x;
+    }
+    transform.localScale = scale;
   }
 }
