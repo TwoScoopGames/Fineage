@@ -87,6 +87,9 @@ public class Player : MonoBehaviour {
     if (Input.GetKeyDown("t")) {
       SceneManager.LoadScene("Title");
     }
+    if (Input.GetKeyDown("u")) {
+      SceneManager.LoadScene("Upgrade");
+    }
 
     invulnerabilityTimer = Mathf.Max(0f, invulnerabilityTimer - Time.deltaTime);
 
@@ -121,7 +124,7 @@ public class Player : MonoBehaviour {
         health--;
         invulnerabilityTimer = 3f;
         if (health <= 0) {
-          SceneManager.LoadScene("Title");
+          SceneManager.LoadScene("Main");
         }
       }
     }
