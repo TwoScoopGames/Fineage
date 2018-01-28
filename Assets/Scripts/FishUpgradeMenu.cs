@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class FishUpgradeMenu : MonoBehaviour {
 
-  public GameManager gameManager;
-  /* private GameManager gameManagerComponent; */
-
   public Button respiratoryButton1;
   private Text respiratoryButton1Text;
   public Button respiratoryButton2;
@@ -42,87 +39,86 @@ public class FishUpgradeMenu : MonoBehaviour {
     tailButton1Text = tailButton1.transform.Find("Text").GetComponent<Text>();
     tailButton2Text = tailButton2.transform.Find("Text").GetComponent<Text>();
 
-    if (gameManager.respiratory.children != null && gameManager.respiratory.children.Length > 0) {
-      respiratoryButton1Text.text = gameManager.respiratory.children[0].name;
+    if (GameManager.Instance.respiratory.children != null && GameManager.Instance.respiratory.children.Length > 0) {
+      respiratoryButton1Text.text = GameManager.Instance.respiratory.children[0].name;
     } else {
       respiratoryButton1.gameObject.SetActive(false);
     }
-    if (gameManager.respiratory.children != null && gameManager.respiratory.children.Length > 1) {
-      respiratoryButton2Text.text = gameManager.respiratory.children[1].name;
+    if (GameManager.Instance.respiratory.children != null && GameManager.Instance.respiratory.children.Length > 1) {
+      respiratoryButton2Text.text = GameManager.Instance.respiratory.children[1].name;
     } else {
       respiratoryButton2.gameObject.SetActive(false);
     }
 
-    if (gameManager.body.children != null && gameManager.body.children.Length > 0) {
-      bodyButton1Text.text = gameManager.body.children[0].name;
+    if (GameManager.Instance.body.children != null && GameManager.Instance.body.children.Length > 0) {
+      bodyButton1Text.text = GameManager.Instance.body.children[0].name;
     } else {
       bodyButton1.gameObject.SetActive(false);
     }
-    if (gameManager.body.children != null && gameManager.body.children.Length > 1) {
-      bodyButton2Text.text = gameManager.body.children[1].name;
+    if (GameManager.Instance.body.children != null && GameManager.Instance.body.children.Length > 1) {
+      bodyButton2Text.text = GameManager.Instance.body.children[1].name;
     } else {
       bodyButton2.gameObject.SetActive(false);
     }
 
-    if (gameManager.head.children != null && gameManager.head.children.Length > 0) {
-      headButton1Text.text = gameManager.head.children[0].name;
+    if (GameManager.Instance.head.children != null && GameManager.Instance.head.children.Length > 0) {
+      headButton1Text.text = GameManager.Instance.head.children[0].name;
     } else {
       headButton1.gameObject.SetActive(false);
     }
-    if (gameManager.head.children != null && gameManager.head.children.Length > 1) {
-      headButton2Text.text = gameManager.head.children[1].name;
+    if (GameManager.Instance.head.children != null && GameManager.Instance.head.children.Length > 1) {
+      headButton2Text.text = GameManager.Instance.head.children[1].name;
     } else {
       headButton2.gameObject.SetActive(false);
     }
 
-    if (gameManager.tail.children != null && gameManager.tail.children.Length > 0) {
-      tailButton1Text.text = gameManager.tail.children[0].name;
+    if (GameManager.Instance.tail.children != null && GameManager.Instance.tail.children.Length > 0) {
+      tailButton1Text.text = GameManager.Instance.tail.children[0].name;
     } else {
       tailButton1.gameObject.SetActive(false);
     }
-    if (gameManager.tail.children != null && gameManager.tail.children.Length > 1) {
-      tailButton2Text.text = gameManager.tail.children[1].name;
+    if (GameManager.Instance.tail.children != null && GameManager.Instance.tail.children.Length > 1) {
+      tailButton2Text.text = GameManager.Instance.tail.children[1].name;
     } else {
       tailButton2.gameObject.SetActive(false);
     }
   }
 
   public void StartOver() {
-    gameManager.StartOver();
+    GameManager.Instance.StartOver();
     SceneManager.LoadScene("Main");
   }
 
   public void UpgradeRespiratory1() {
-    gameManager.respiratory = gameManager.respiratory.children[0];
+    GameManager.Instance.respiratory = GameManager.Instance.respiratory.children[0];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeRespiratory2() {
-    gameManager.respiratory = gameManager.respiratory.children[1];
+    GameManager.Instance.respiratory = GameManager.Instance.respiratory.children[1];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeBody1() {
-    gameManager.body = gameManager.body.children[0];
+    GameManager.Instance.body = GameManager.Instance.body.children[0];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeBody2() {
-    gameManager.body = gameManager.body.children[1];
+    GameManager.Instance.body = GameManager.Instance.body.children[1];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeHead1() {
-    gameManager.head = gameManager.head.children[0];
+    GameManager.Instance.head = GameManager.Instance.head.children[0];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeHead2() {
-    gameManager.head = gameManager.head.children[1];
+    GameManager.Instance.head = GameManager.Instance.head.children[1];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeTail1() {
-    gameManager.tail = gameManager.tail.children[0];
+    GameManager.Instance.tail = GameManager.Instance.tail.children[0];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeTail2() {
-    gameManager.tail = gameManager.tail.children[1];
+    GameManager.Instance.tail = GameManager.Instance.tail.children[1];
     SceneManager.LoadScene("Main");
   }
-
 }

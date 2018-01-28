@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
-
-  public GameObject playerPrefab;
+public class GameManager {
 
   public TechTreeNode body;
   public TechTreeNode head;
   public TechTreeNode respiratory;
   public TechTreeNode tail;
 
-  void Start() {
-    DontDestroyOnLoad(gameObject);
+  private static readonly GameManager instance = new GameManager();
 
+  private GameManager() {
     StartOver();
+  }
+
+  public static GameManager Instance {
+    get {
+      return instance;
+    }
   }
 
   public void StartOver() {
@@ -28,7 +32,8 @@ public class GameManager : MonoBehaviour {
     var camera = GameObject.Find("Main Camera");
     var smoothCamera = camera.GetComponent<SmoothCamera2D>();
 
-    var player = Object.Instantiate(playerPrefab);
+    var prefab = CachedResource.Load<GameObject>("Player");
+    var player = Object.Instantiate(prefab);
     var playerComponent = player.GetComponent<Player>();
     smoothCamera.target = player.transform;
 

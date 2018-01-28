@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -34,6 +35,10 @@ public class Player : MonoBehaviour {
   Vector2 direction = new Vector2();
 
   void FixedUpdate() {
+    if (Input.GetKeyDown("t")) {
+      SceneManager.LoadScene("Title");
+    }
+
     stamina = Mathf.Min(maxStamina, stamina + (Time.deltaTime * staminaRegenPerSecond));
 
     var horizontal = Input.GetAxis("Horizontal");
