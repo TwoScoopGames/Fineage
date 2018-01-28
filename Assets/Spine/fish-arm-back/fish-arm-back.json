@@ -1,44 +1,23 @@
 {
-"skeleton": {
-	"hash": "2IUU/CBiXJusBSQjxHI87KdoZus",
-	"spine": "3.6.51",
-	"width": 100.39,
-	"height": 66.59,
-	"images": "./fish-cropboard-assets/"
-},
+"skeleton": { "hash": "qo6B7/XIRJ/EZylJDheW9OPX5V0", "spine": "3.6.51", "width": 99.39, "height": 65.59, "images": "./fish-cropboard-assets/" },
 "bones": [
 	{ "name": "root", "rotation": 0.34 },
 	{ "name": "bone", "parent": "root", "length": 92.2, "rotation": -118.88, "x": 4.52, "y": 3.47 }
 ],
 "slots": [
-	{ "name": "testfish-back-arm", "bone": "bone", "attachment": "testfish-back-arm" }
+	{ "name": "more-fins-back", "bone": "bone", "attachment": "more-fins-back" }
 ],
 "skins": {
 	"default": {
-		"testfish-back-arm": {
-			"testfish-back-arm": { "x": 29.07, "y": 13.53, "rotation": 118.88, "width": 100, "height": 66 }
+		"more-fins-back": {
+			"more-fins-back": { "x": 22.12, "y": 7.47, "rotation": 118.88, "width": 99, "height": 65 }
 		}
 	}
 },
 "animations": {
-	"fish-tail": {
+	"fish-arm-back": {
 		"bones": {
 			"bone": {
-				"rotate": [
-					{ "time": 0, "angle": 0, "curve": "stepped" },
-					{ "time": 0.5, "angle": 0, "curve": "stepped" },
-					{ "time": 1, "angle": 0 }
-				],
-				"translate": [
-					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
-					{ "time": 0.5, "x": 0, "y": 0, "curve": "stepped" },
-					{ "time": 1, "x": 0, "y": 0 }
-				],
-				"scale": [
-					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
-					{ "time": 0.5, "x": 1, "y": 1, "curve": "stepped" },
-					{ "time": 1, "x": 1, "y": 1 }
-				],
 				"shear": [
 					{ "time": 0, "x": 20.89, "y": 0 },
 					{ "time": 0.5, "x": -16.52, "y": 0 },

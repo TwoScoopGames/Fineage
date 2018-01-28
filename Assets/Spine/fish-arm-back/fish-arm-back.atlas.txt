@@ -4,10 +4,10 @@ size: 128,128
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-testfish-back-arm
+more-fins-back
   rotate: false
   xy: 2, 2
-  size: 100, 66
-  orig: 100, 66
+  size: 99, 65
+  orig: 99, 65
   offset: 0, 0
   index: -1

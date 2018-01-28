@@ -1,13 +1,13 @@
 
-fish-arm-front.png
-size: 128,128
+starter-tail.png
+size: 128,256
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-more-fins-front
+starter-tail
   rotate: false
   xy: 2, 2
-  size: 99, 65
-  orig: 99, 65
+  size: 104, 127
+  orig: 104, 127
   offset: 0, 0
   index: -1

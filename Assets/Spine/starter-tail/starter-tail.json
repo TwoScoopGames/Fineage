@@ -1,0 +1,30 @@
+{
+"skeleton": { "hash": "1MrZIC/kEGLyAsKashlx5E4KIFU", "spine": "3.6.51", "width": 104, "height": 127, "images": "./fish-cropboard-assets/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 87.01, "rotation": -179.34, "x": 5.5, "y": 4 }
+],
+"slots": [
+	{ "name": "starter-tail", "bone": "bone", "attachment": "starter-tail" }
+],
+"skins": {
+	"default": {
+		"starter-tail": {
+			"starter-tail": { "x": 46.02, "y": 1.47, "rotation": 179.34, "width": 104, "height": 127 }
+		}
+	}
+},
+"animations": {
+	"starter-tail": {
+		"bones": {
+			"bone": {
+				"shear": [
+					{ "time": 0, "x": -27.18, "y": 0 },
+					{ "time": 0.5, "x": 22.99, "y": 0 },
+					{ "time": 1, "x": -27.18, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
