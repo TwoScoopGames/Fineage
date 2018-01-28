@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212421734936615724}
   - component: {fileID: 114594646838275626}
   m_Layer: 0
-  m_Name: Starter Body
+  m_Name: Giant Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f8556a2125b44078bedf62e9ee7164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  scale: 1
+  health: 3
+  scale: 2
 --- !u!212 &212421734936615724
 SpriteRenderer:
   m_ObjectHideFlags: 1

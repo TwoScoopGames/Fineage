@@ -29,6 +29,18 @@ public class TechTreeNode {
   public static readonly TechTreeNode firstBody = new TechTreeNode {
     name = "Starter Body",
     prefabs = new Dictionary<string, string> { { "Body", "Starter Body" } },
+    children = new[] {
+      new TechTreeNode {
+        name = "Larger Body",
+        prefabs = new Dictionary<string, string> { { "Body", "Larger Body" } },
+        children = new[] {
+          new TechTreeNode {
+            name = "Giant Body",
+            prefabs = new Dictionary<string, string> { { "Body", "Giant Body" } },
+          },
+        },
+      },
+    },
   };
 
   public static readonly TechTreeNode firstHead = new TechTreeNode {

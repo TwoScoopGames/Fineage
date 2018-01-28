@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
 
   public int speed = 1;
   public int attack = 1;
-  public int defense = 1;
+  public int health = 1;
 
   public int maxStamina = 1;
   public float stamina = 1f;
@@ -98,6 +98,7 @@ public class Player : MonoBehaviour {
   protected void OnGUI()
   {
     GUI.skin.label.fontSize = Screen.width / 40;
-    GUILayout.Label(string.Format("{0} / {1}", stamina, maxStamina));
+    GUILayout.Label(string.Format("Stamina: {0} / {1}", stamina, maxStamina));
+    GUILayout.Label(string.Format("Health: {0}", health));
   }
 }
