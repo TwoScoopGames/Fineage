@@ -14,9 +14,15 @@ public class GameManager : MonoBehaviour {
         var target = player.transform.Find(item.Key);
         var prefab = CachedResource.Load<GameObject>(item.Value);
         var gameObject = Object.Instantiate(prefab, target);
-        var anim = gameObject.GetComponent<SkeletonAnimation>();
-        if (anim != null) {
-          playerComponent.speedControlledAnimations.Add(anim);
+
+        var skeletonAnimation = gameObject.GetComponent<SkeletonAnimation>();
+        if (skeletonAnimation != null) {
+          playerComponent.speedControlledAnimations.Add(skeletonAnimation);
+        }
+
+        var animator = gameObject.GetComponent<Animator>();
+        if (animator != null) {
+          playerComponent.speedControlledAnimators.Add(animator);
         }
       }
     }

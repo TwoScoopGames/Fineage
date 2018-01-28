@@ -24,6 +24,7 @@ public class Player : MonoBehaviour {
   public float airGravityScale = 50f;
 
   public List<SkeletonAnimation> speedControlledAnimations = new List<SkeletonAnimation>();
+  public List<Animator> speedControlledAnimators = new List<Animator>();
 
   void Start() {
     rb = GetComponent<Rigidbody2D>();
@@ -85,6 +86,9 @@ public class Player : MonoBehaviour {
     var animationSpeed = 0.5f + (rb.velocity.magnitude / 2000f);
     foreach (var anim in speedControlledAnimations) {
       anim.timeScale = animationSpeed;
+    }
+    foreach (var anim in speedControlledAnimators) {
+      anim.speed = animationSpeed;
     }
   }
 
