@@ -28,6 +28,8 @@ public class FishUpgradeMenu : MonoBehaviour {
   public Button tailButton2;
   private Text tailButton2Text;
 
+  public AudioClip[] uiButtonSounds;
+
   void Start() {
     respiratoryButton1Text = respiratoryButton1.transform.Find("Text").GetComponent<Text>();
     respiratoryButton2Text = respiratoryButton2.transform.Find("Text").GetComponent<Text>();
@@ -93,43 +95,53 @@ public class FishUpgradeMenu : MonoBehaviour {
   }
 
   public void StartOver() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.StartOver();
     SceneManager.LoadScene("Main");
   }
 
   public void UpgradeRespiratory1() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.respiratory = GameManager.Instance.respiratory.children[0];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeRespiratory2() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.respiratory = GameManager.Instance.respiratory.children[1];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeBody1() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.body = GameManager.Instance.body.children[0];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeBody2() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.body = GameManager.Instance.body.children[1];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeHead1() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.head = GameManager.Instance.head.children[0];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeHead2() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.head = GameManager.Instance.head.children[1];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeHead3() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.head = GameManager.Instance.head.children[2];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeTail1() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.tail = GameManager.Instance.tail.children[0];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeTail2() {
+    SoundManager.instance.Play(uiButtonSounds);
     GameManager.Instance.tail = GameManager.Instance.tail.children[1];
     SceneManager.LoadScene("Main");
   }
