@@ -330,8 +330,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f4da12529db14da9864a891dbbb7140, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   thrust: 50
   dashMultiplier: 20
   mode: 1
@@ -344,6 +344,29 @@ MonoBehaviour:
   airGravityScale: 500
   speedControlledAnimations: []
   speedControlledAnimators: []
+  splashSounds:
+  - {fileID: 8300000, guid: e2e00a3ad99624be1b10f244990ea6a8, type: 3}
+  - {fileID: 8300000, guid: 65ac3f38229ad4732b1a28f6159ee82a, type: 3}
+  - {fileID: 8300000, guid: 41bf027600b3e40cd904698b6a4495db, type: 3}
+  - {fileID: 8300000, guid: 301260b82db334aa889a27079bdc3256, type: 3}
+  - {fileID: 8300000, guid: 177bdea9fd0514581a0bdd0275996f16, type: 3}
+  - {fileID: 8300000, guid: 84754923f6fcb462f8d306580e50bf02, type: 3}
+  - {fileID: 8300000, guid: a9a25fd1448eb46dcb0d7983c29a2780, type: 3}
+  - {fileID: 8300000, guid: c9d24d2690b1b431082cefc98339c1a0, type: 3}
+  - {fileID: 8300000, guid: 007ec3ee39faa4ea5b3d8b10305cf28e, type: 3}
+  dashSounds:
+  - {fileID: 8300000, guid: e2e00a3ad99624be1b10f244990ea6a8, type: 3}
+  - {fileID: 8300000, guid: 65ac3f38229ad4732b1a28f6159ee82a, type: 3}
+  - {fileID: 8300000, guid: 41bf027600b3e40cd904698b6a4495db, type: 3}
+  - {fileID: 8300000, guid: 301260b82db334aa889a27079bdc3256, type: 3}
+  - {fileID: 8300000, guid: 177bdea9fd0514581a0bdd0275996f16, type: 3}
+  - {fileID: 8300000, guid: 84754923f6fcb462f8d306580e50bf02, type: 3}
+  - {fileID: 8300000, guid: a9a25fd1448eb46dcb0d7983c29a2780, type: 3}
+  - {fileID: 8300000, guid: c9d24d2690b1b431082cefc98339c1a0, type: 3}
+  - {fileID: 8300000, guid: 007ec3ee39faa4ea5b3d8b10305cf28e, type: 3}
+  biteSounds: []
+  pokeSounds: []
+  hitSounds: []
 --- !u!198 &198067872211345652
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3759,4 +3782,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
-  
