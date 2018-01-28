@@ -101,5 +101,6 @@ public class Player : MonoBehaviour {
     GUILayout.Label(string.Format("Stamina: {0} / {1}", stamina, maxStamina));
     GUILayout.Label(string.Format("Health: {0}", health));
     GUILayout.Label(string.Format("Speed: {0}", speed));
+    GUILayout.Label(string.Format("Attack: {0}", attack));
   }
 }
