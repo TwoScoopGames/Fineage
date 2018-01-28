@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
   public float dashMultiplier = 10f;
   public ForceMode2D mode = ForceMode2D.Force;
 
-  public int speed = 1;
+  public float speed = 1;
   public int attack = 1;
   public int health = 1;
 
@@ -100,5 +100,6 @@ public class Player : MonoBehaviour {
     GUI.skin.label.fontSize = Screen.width / 40;
     GUILayout.Label(string.Format("Stamina: {0} / {1}", stamina, maxStamina));
     GUILayout.Label(string.Format("Health: {0}", health));
+    GUILayout.Label(string.Format("Speed: {0}", speed));
   }
 }

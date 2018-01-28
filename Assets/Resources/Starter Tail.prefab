@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33415787563701196}
   - component: {fileID: 23370462420699230}
   - component: {fileID: 114872517112139498}
+  - component: {fileID: 114201505713641080}
   m_Layer: 0
   m_Name: Starter Tail
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1129769919037196}
   m_Mesh: {fileID: 0}
+--- !u!114 &114201505713641080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129769919037196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4618fc6d1454e43dfbed948b229f9f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  dashStaminaCost: 1
 --- !u!114 &114872517112139498
 MonoBehaviour:
   m_ObjectHideFlags: 1

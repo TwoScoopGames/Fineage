@@ -122,7 +122,7 @@ public class TechTreeNode {
       new TechTreeNode {
         name = "More Fins",
         prefabs = new Dictionary<string, string> {
-          { "Tail", "Starter Tail" },
+          { "Tail", "More Fins Tail" },
           { "Dorsal Fin", "Starter Dorsal Fin" },
           { "Arm Front Fin", "Starter Arm Front Fin" },
           { "Arm Back Fin", "Starter Arm Back Fin" },

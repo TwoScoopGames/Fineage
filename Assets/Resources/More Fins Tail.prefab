@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33415787563701196}
   - component: {fileID: 23370462420699230}
   - component: {fileID: 114872517112139498}
-  - component: {fileID: 114955100901040160}
+  - component: {fileID: 114201505713641080}
   m_Layer: 0
-  m_Name: Better Tail
+  m_Name: More Fins Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7416e2aed3da84dfdafd4e1328209007, type: 2}
+  - {fileID: 2100000, guid: 846e1d745160b45a1be5dd6ae4a59bda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,6 +84,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1129769919037196}
   m_Mesh: {fileID: 0}
+--- !u!114 &114201505713641080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129769919037196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4618fc6d1454e43dfbed948b229f9f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  dashStaminaCost: 0.9
 --- !u!114 &114872517112139498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 36b8577f2465947b4923df5a061807ad, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: b0be4583f2dff47689b4d3c052e669ec, type: 2}
   initialSkinName: default
   initialFlipX: 0
   initialFlipY: 0
@@ -111,19 +124,6 @@ MonoBehaviour:
   calculateTangents: 0
   logErrors: 0
   disableRenderingOnOverride: 1
-  _animationName: better-fins-tail
+  _animationName: starter-tail
   loop: 1
   timeScale: 1
---- !u!114 &114955100901040160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1129769919037196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4618fc6d1454e43dfbed948b229f9f3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  dashStaminaCost: 0.8
