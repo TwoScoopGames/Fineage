@@ -13,7 +13,6 @@ public class PlayerSpawner : MonoBehaviour {
       gm = Object.Instantiate(prefab);
     }
     gameManager = gm.GetComponent<GameManager>();
-    gameManager.StartOver();
     gameManager.SpawnPlayer();
   }
 }

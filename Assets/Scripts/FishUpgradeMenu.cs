@@ -42,58 +42,86 @@ public class FishUpgradeMenu : MonoBehaviour {
     tailButton1Text = tailButton1.transform.Find("Text").GetComponent<Text>();
     tailButton2Text = tailButton2.transform.Find("Text").GetComponent<Text>();
 
-
     if (gameManager.respiratory.children != null && gameManager.respiratory.children.Length > 0) {
-      respiratoryButton1Text.text = gameManager.respiratory.children[0].prefabs["Gills"];
+      respiratoryButton1Text.text = gameManager.respiratory.children[0].name;
     } else {
       respiratoryButton1.gameObject.SetActive(false);
     }
     if (gameManager.respiratory.children != null && gameManager.respiratory.children.Length > 1) {
-      respiratoryButton2Text.text = gameManager.respiratory.children[1].prefabs["Gills"];
+      respiratoryButton2Text.text = gameManager.respiratory.children[1].name;
     } else {
       respiratoryButton2.gameObject.SetActive(false);
     }
 
     if (gameManager.body.children != null && gameManager.body.children.Length > 0) {
-      bodyButton1Text.text = gameManager.body.children[0].prefabs["Body"];
+      bodyButton1Text.text = gameManager.body.children[0].name;
     } else {
       bodyButton1.gameObject.SetActive(false);
     }
     if (gameManager.body.children != null && gameManager.body.children.Length > 1) {
-      bodyButton2Text.text = gameManager.body.children[1].prefabs["Body"];
+      bodyButton2Text.text = gameManager.body.children[1].name;
     } else {
       bodyButton2.gameObject.SetActive(false);
     }
 
     if (gameManager.head.children != null && gameManager.head.children.Length > 0) {
-      headButton1Text.text = gameManager.head.children[0].prefabs["Head"];
+      headButton1Text.text = gameManager.head.children[0].name;
     } else {
       headButton1.gameObject.SetActive(false);
     }
     if (gameManager.head.children != null && gameManager.head.children.Length > 1) {
-      headButton2Text.text = gameManager.head.children[1].prefabs["Head"];
+      headButton2Text.text = gameManager.head.children[1].name;
     } else {
       headButton2.gameObject.SetActive(false);
     }
 
     if (gameManager.tail.children != null && gameManager.tail.children.Length > 0) {
-      tailButton1Text.text = gameManager.tail.children[0].prefabs["Tail"];
+      tailButton1Text.text = gameManager.tail.children[0].name;
     } else {
       tailButton1.gameObject.SetActive(false);
     }
     if (gameManager.tail.children != null && gameManager.tail.children.Length > 1) {
-      tailButton2Text.text = gameManager.tail.children[1].prefabs["Tail"];
+      tailButton2Text.text = gameManager.tail.children[1].name;
     } else {
       tailButton2.gameObject.SetActive(false);
     }
   }
 
-  void Update() {
-
-  }
-
   public void StartOver() {
     gameManager.StartOver();
+    SceneManager.LoadScene("Main");
+  }
+
+  public void UpgradeRespiratory1() {
+    gameManager.respiratory = gameManager.respiratory.children[0];
+    SceneManager.LoadScene("Main");
+  }
+  public void UpgradeRespiratory2() {
+    gameManager.respiratory = gameManager.respiratory.children[1];
+    SceneManager.LoadScene("Main");
+  }
+  public void UpgradeBody1() {
+    gameManager.body = gameManager.body.children[0];
+    SceneManager.LoadScene("Main");
+  }
+  public void UpgradeBody2() {
+    gameManager.body = gameManager.body.children[1];
+    SceneManager.LoadScene("Main");
+  }
+  public void UpgradeHead1() {
+    gameManager.head = gameManager.head.children[0];
+    SceneManager.LoadScene("Main");
+  }
+  public void UpgradeHead2() {
+    gameManager.head = gameManager.head.children[1];
+    SceneManager.LoadScene("Main");
+  }
+  public void UpgradeTail1() {
+    gameManager.tail = gameManager.tail.children[0];
+    SceneManager.LoadScene("Main");
+  }
+  public void UpgradeTail2() {
+    gameManager.tail = gameManager.tail.children[1];
     SceneManager.LoadScene("Main");
   }
 
