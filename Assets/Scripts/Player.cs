@@ -55,8 +55,8 @@ public class Player : MonoBehaviour {
       if (vertical > 0) {
         direction += Vector2.up;
       }
-				
-	  if (Input.GetButtonDown("dash") && stamina >= dashStaminaCost) {
+
+      if (Input.GetButtonDown("dash") && stamina >= dashStaminaCost) {
         stamina -= dashStaminaCost;
         amt *= dashMultiplier;
       }
