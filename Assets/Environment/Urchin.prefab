@@ -35,10 +35,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4157727509648352}
   - component: {fileID: 212523747799644724}
-  - component: {fileID: 61437384035109442}
+  - component: {fileID: 58645372155630474}
   m_Layer: 0
   m_Name: urchin
-  m_TagString: Untagged
+  m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,8 +70,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61437384035109442
-BoxCollider2D:
+--- !u!58 &58645372155630474
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -82,19 +82,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 453, y: 270}
-    newSize: {x: 453, y: 270}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -93.5}
   serializedVersion: 2
-  m_Size: {x: 453, y: 270}
-  m_EdgeRadius: 0
+  m_Radius: 218.44
 --- !u!212 &212523747799644724
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
   public float speed = 1;
   public int attack = 1;
   public int health = 1;
+  private float invulnerabilityTimer = 0;
 
   public int maxStamina = 1;
   public float stamina = 1f;
@@ -87,6 +88,8 @@ public class Player : MonoBehaviour {
       SceneManager.LoadScene("Title");
     }
 
+    invulnerabilityTimer = Mathf.Max(0f, invulnerabilityTimer - Time.deltaTime);
+
     var scale = transform.localScale;
     if ((direction.x > 0.01 || direction.x < -0.01) && Mathf.Sign(direction.x) != Mathf.Sign(scale.x)) {
       scale.x = -scale.x;
@@ -108,6 +111,21 @@ public class Player : MonoBehaviour {
     }
   }
 
+  void OnCollisionEnter2D(Collision2D collision)
+  {
+    /* Debug.Log(collision.gameObject.tag); */
+    if (collision.gameObject.tag == "Hazard") {
+      rb.velocity *= -1;
+      rb.AddForce((collision.relativeVelocity * -1).normalized * thrust * speed * dashMultiplier * 5, ForceMode2D.Impulse);
+      if (invulnerabilityTimer <= 0) {
+        health--;
+        invulnerabilityTimer = 3f;
+        if (health <= 0) {
+          SceneManager.LoadScene("Title");
+        }
+      }
+    }
+  }
 
   protected void OnGUI()
   {
