@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour {
     DontDestroyOnLoad(gameObject);
 
     StartOver();
-    SpawnPlayer();
   }
 
   public void StartOver() {
@@ -39,8 +38,5 @@ public class GameManager : MonoBehaviour {
     tail.Spawn(player, playerComponent);
 
     return player;
-  }
-
-  void Update() {
   }
 }
