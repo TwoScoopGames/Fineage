@@ -127,6 +127,8 @@ public class Player : MonoBehaviour {
           SceneManager.LoadScene("Main");
         }
       }
+    } else if (collision.gameObject.tag == "Eggs") {
+      SceneManager.LoadScene("Upgrade");
     }
   }
 
