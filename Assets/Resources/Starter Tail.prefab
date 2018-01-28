@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 50049dcafd3b748e381b6d7e08864694, type: 2}
+  - {fileID: 2100000, guid: 846e1d745160b45a1be5dd6ae4a59bda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: e2b73e375a346407eb14fe58ce139f25, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: b0be4583f2dff47689b4d3c052e669ec, type: 2}
   initialSkinName: default
   initialFlipX: 0
   initialFlipY: 0
@@ -110,6 +110,6 @@ MonoBehaviour:
   calculateTangents: 0
   logErrors: 0
   disableRenderingOnOverride: 1
-  _animationName: fish-tail
+  _animationName: starter-tail
   loop: 1
   timeScale: 1

@@ -110,6 +110,6 @@ MonoBehaviour:
   calculateTangents: 0
   logErrors: 0
   disableRenderingOnOverride: 1
-  _animationName: fish-tail
+  _animationName: fish-arm-front
   loop: 1
   timeScale: 1
