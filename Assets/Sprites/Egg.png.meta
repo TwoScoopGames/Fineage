@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-guid: ca80ac385a05e43e2a3378aaa7cc522d
-timeCreated: 1517166497
+guid: b8600263716124970ac84b9249f9c851
+timeCreated: 1517179452
 licenseType: Free
-=======
-guid: 45c70b9157c204c118b450c6bfb93a5a
-timeCreated: 1517165767
-licenseType: Pro
->>>>>>> update title screen
-=======
-guid: ca80ac385a05e43e2a3378aaa7cc522d
-timeCreated: 1517166497
-licenseType: Free
->>>>>>> Add new assets
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -83,20 +71,7 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Add new assets
   spritePackingTag: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-<<<<<<< HEAD
-=======
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
->>>>>>> update title screen
-=======
->>>>>>> Add new assets

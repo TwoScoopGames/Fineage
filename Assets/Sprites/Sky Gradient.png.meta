@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-guid: ca80ac385a05e43e2a3378aaa7cc522d
-timeCreated: 1517166497
+guid: 90a99621420774c41ae72b0bc5fc0aae
+timeCreated: 1517173294
 licenseType: Free
-=======
-guid: 45c70b9157c204c118b450c6bfb93a5a
-timeCreated: 1517165767
-licenseType: Pro
->>>>>>> update title screen
-=======
-guid: ca80ac385a05e43e2a3378aaa7cc522d
-timeCreated: 1517166497
-licenseType: Free
->>>>>>> Add new assets
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -58,7 +46,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -78,25 +66,22 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
     physicsShape: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Add new assets
   spritePackingTag: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-<<<<<<< HEAD
-=======
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
->>>>>>> update title screen
-=======
->>>>>>> Add new assets
