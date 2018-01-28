@@ -26,13 +26,15 @@ public class Player : MonoBehaviour {
   public GameObject[] speedControlledAnims;
   private SkeletonAnimation[] speedControlledAnimations;
 
-  void Start () {
+  void Start() {
     rb = GetComponent<Rigidbody2D>();
     stamina = maxStamina;
     speedControlledAnimations = speedControlledAnims.Select(o => o.GetComponent<SkeletonAnimation>()).ToArray();
   }
 
-  void Update () {
+  Vector2 direction = new Vector2();
+
+  void FixedUpdate() {
     stamina = Mathf.Min(maxStamina, stamina + (Time.deltaTime * staminaRegenPerSecond));
 
     var horizontal = Input.GetAxis("Horizontal");
@@ -40,7 +42,7 @@ public class Player : MonoBehaviour {
 
     var amt = thrust * speed;
 
-    var direction = new Vector2();
+    direction = new Vector2();
     if (horizontal < 0) {
       direction += Vector2.left;
     }
@@ -67,7 +69,9 @@ public class Player : MonoBehaviour {
     direction = direction.normalized;
 
     rb.AddForce(direction * amt, mode);
+  }
 
+  void Update() {
     var scale = transform.localScale;
     if ((direction.x > 0.01 || direction.x < -0.01) && Mathf.Sign(direction.x) != Mathf.Sign(scale.x)) {
       scale.x = -scale.x;

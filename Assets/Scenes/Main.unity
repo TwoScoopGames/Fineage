@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 119212489}
   - component: {fileID: 119212488}
   m_Layer: 0
-  m_Name: New SkeletonAnimation
+  m_Name: Tail SkeletonAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 198983887}
   - component: {fileID: 198983886}
   m_Layer: 0
-  m_Name: New SkeletonAnimation
+  m_Name: Arm Front SkeletonAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,6 +722,10 @@ MonoBehaviour:
   staminaRegenPerSecond: 100
   dashStaminaCost: 1
   airGravityScale: 500
+  speedControlledAnims:
+  - {fileID: 198983884}
+  - {fileID: 119212486}
+  - {fileID: 1673248304}
 --- !u!50 &620026627
 Rigidbody2D:
   serializedVersion: 4
@@ -1328,7 +1332,7 @@ GameObject:
   - component: {fileID: 1673248307}
   - component: {fileID: 1673248306}
   m_Layer: 0
-  m_Name: New SkeletonAnimation
+  m_Name: Arm Back SkeletonAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
