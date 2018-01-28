@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using Spine.Unity;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
@@ -21,9 +23,13 @@ public class Player : MonoBehaviour {
 
   public float airGravityScale = 50f;
 
+  public GameObject[] speedControlledAnims;
+  private SkeletonAnimation[] speedControlledAnimations;
+
   void Start () {
     rb = GetComponent<Rigidbody2D>();
     stamina = maxStamina;
+    speedControlledAnimations = speedControlledAnims.Select(o => o.GetComponent<SkeletonAnimation>()).ToArray();
   }
 
   void Update () {
@@ -72,8 +78,12 @@ public class Player : MonoBehaviour {
     if (scale.x < 0) {
       angleZ *= -1;
     }
-    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angleZ), 0.1f);
+    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angleZ), 0.5f);
 
+    var animationSpeed = 0.5f + (rb.velocity.magnitude / 2000f);
+    foreach (var anim in speedControlledAnimations) {
+      anim.timeScale = animationSpeed;
+    }
   }
 
 
