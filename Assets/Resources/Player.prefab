@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 61066251687904286}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,10 +308,8 @@ MonoBehaviour:
   attack: 1
   defense: 1
   maxStamina: 100
-  staminaRegenPerSecond: 100
+  stamina: 1
   dashStaminaCost: 1
   airGravityScale: 500
-  speedControlledAnims:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  speedControlledAnimations: []
+  speedControlledAnimators: []

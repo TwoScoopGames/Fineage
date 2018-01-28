@@ -18,8 +18,7 @@ public class Player : MonoBehaviour {
   public int defense = 1;
 
   public int maxStamina = 1;
-  private float stamina = 1f;
-  public float staminaRegenPerSecond = 1f;
+  public float stamina = 1f;
   public float dashStaminaCost = 1f;
 
   public float airGravityScale = 50f;
@@ -35,8 +34,6 @@ public class Player : MonoBehaviour {
   Vector2 direction = new Vector2();
 
   void FixedUpdate() {
-    stamina = Mathf.Min(maxStamina, stamina + (Time.deltaTime * staminaRegenPerSecond));
-
     var horizontal = Input.GetAxis("Horizontal");
     var vertical = Input.GetAxis("Vertical");
 

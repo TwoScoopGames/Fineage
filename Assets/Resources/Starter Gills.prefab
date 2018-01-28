@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4871376895234496}
   - component: {fileID: 212400463833456240}
+  - component: {fileID: 114619722306404326}
   m_Layer: 0
   m_Name: Starter Gills
   m_TagString: Untagged
@@ -40,6 +41,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114619722306404326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1362601882916250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389cec5628e014145ad72594ab486b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxStamina: 2
+  staminaRegenPerSecond: 1
+  minRegenPercent: 0.1
 --- !u!212 &212400463833456240
 SpriteRenderer:
   m_ObjectHideFlags: 1
