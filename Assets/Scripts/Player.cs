@@ -67,6 +67,13 @@ public class Player : MonoBehaviour {
       scale.x = -scale.x;
     }
     transform.localScale = scale;
+
+    var angleZ = rb.velocity.y / 2000f * 45f;
+    if (scale.x < 0) {
+      angleZ *= -1;
+    }
+    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angleZ), 0.1f);
+
   }
 
 
