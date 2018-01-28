@@ -23,13 +23,11 @@ public class Player : MonoBehaviour {
 
   public float airGravityScale = 50f;
 
-  public GameObject[] speedControlledAnims;
-  private SkeletonAnimation[] speedControlledAnimations;
+  public List<SkeletonAnimation> speedControlledAnimations = new List<SkeletonAnimation>();
 
   void Start() {
     rb = GetComponent<Rigidbody2D>();
     stamina = maxStamina;
-    speedControlledAnimations = speedControlledAnims.Select(o => o.GetComponent<SkeletonAnimation>()).ToArray();
   }
 
   Vector2 direction = new Vector2();
