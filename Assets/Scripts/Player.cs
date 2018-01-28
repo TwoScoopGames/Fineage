@@ -26,6 +26,19 @@ public class Player : MonoBehaviour {
   public List<SkeletonAnimation> speedControlledAnimations = new List<SkeletonAnimation>();
   public List<Animator> speedControlledAnimators = new List<Animator>();
 
+  // player jumps out of water, or reinters water
+  public AudioClip[] splashSounds;
+
+  // hit dash button
+  public AudioClip[] dashSounds;
+
+  // Player uses bite or poke attacks
+  public AudioClip[] biteSounds;
+  public AudioClip[] pokeSounds;
+
+  // Player is hit by enemy
+  public AudioClip[] hitSounds;
+
   void Start() {
     rb = GetComponent<Rigidbody2D>();
     stamina = maxStamina;
@@ -55,6 +68,7 @@ public class Player : MonoBehaviour {
       }
 
       if (Input.GetButtonDown("dash") && stamina >= dashStaminaCost) {
+        SoundManager.instance.Play(dashSounds);
         stamina -= dashStaminaCost;
         amt *= dashMultiplier;
       }
