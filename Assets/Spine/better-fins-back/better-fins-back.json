@@ -1,0 +1,45 @@
+{
+"skeleton": { "hash": "C9JiGH3AzDpmzYWYwDscgZAz65Q", "spine": "3.6.51", "width": 157, "height": 228, "images": "./fish-cropboard-assets/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 142.01, "rotation": -90.81, "x": 1.5, "y": 2 }
+],
+"slots": [
+	{ "name": "better-fins-back", "bone": "bone", "attachment": "better-fins-back" }
+],
+"skins": {
+	"default": {
+		"better-fins-back": {
+			"better-fins-back": { "x": 85.17, "y": -11.8, "rotation": 90.81, "width": 157, "height": 228 }
+		}
+	}
+},
+"animations": {
+	"better-fins-back": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.5, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 1, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": -35.19, "y": 0 },
+					{ "time": 0.5, "x": 36.92, "y": 0 },
+					{ "time": 1, "x": -35.19, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
