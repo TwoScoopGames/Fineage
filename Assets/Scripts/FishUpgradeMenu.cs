@@ -20,6 +20,8 @@ public class FishUpgradeMenu : MonoBehaviour {
   private Text headButton1Text;
   public Button headButton2;
   private Text headButton2Text;
+  public Button headButton3;
+  private Text headButton3Text;
 
   public Button tailButton1;
   private Text tailButton1Text;
@@ -35,6 +37,7 @@ public class FishUpgradeMenu : MonoBehaviour {
 
     headButton1Text = headButton1.transform.Find("Text").GetComponent<Text>();
     headButton2Text = headButton2.transform.Find("Text").GetComponent<Text>();
+    headButton3Text = headButton3.transform.Find("Text").GetComponent<Text>();
 
     tailButton1Text = tailButton1.transform.Find("Text").GetComponent<Text>();
     tailButton2Text = tailButton2.transform.Find("Text").GetComponent<Text>();
@@ -70,6 +73,11 @@ public class FishUpgradeMenu : MonoBehaviour {
       headButton2Text.text = GameManager.Instance.head.children[1].name;
     } else {
       headButton2.gameObject.SetActive(false);
+    }
+    if (GameManager.Instance.head.children != null && GameManager.Instance.head.children.Length > 2) {
+      headButton3Text.text = GameManager.Instance.head.children[2].name;
+    } else {
+      headButton3.gameObject.SetActive(false);
     }
 
     if (GameManager.Instance.tail.children != null && GameManager.Instance.tail.children.Length > 0) {
@@ -111,6 +119,10 @@ public class FishUpgradeMenu : MonoBehaviour {
   }
   public void UpgradeHead2() {
     GameManager.Instance.head = GameManager.Instance.head.children[1];
+    SceneManager.LoadScene("Main");
+  }
+  public void UpgradeHead3() {
+    GameManager.Instance.head = GameManager.Instance.head.children[2];
     SceneManager.LoadScene("Main");
   }
   public void UpgradeTail1() {

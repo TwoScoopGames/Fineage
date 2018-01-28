@@ -54,6 +54,16 @@ public class TechTreeNode {
             prefabs = new Dictionary<string, string> { { "Head", "Head Spear" } },
           }
         }
+      },
+      new TechTreeNode {
+        name = "Cuttlefish Head",
+        prefabs = new Dictionary<string, string> { { "Head", "Cuttlefish Head" } },
+        children = new[] {
+          new TechTreeNode {
+            name = "Squid Head",
+            prefabs = new Dictionary<string, string> { { "Head", "Squid Head" } },
+          }
+        }
       }
     }
   };

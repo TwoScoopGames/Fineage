@@ -35,10 +35,6 @@ public class Player : MonoBehaviour {
   Vector2 direction = new Vector2();
 
   void FixedUpdate() {
-    if (Input.GetKeyDown("t")) {
-      SceneManager.LoadScene("Title");
-    }
-
     stamina = Mathf.Min(maxStamina, stamina + (Time.deltaTime * staminaRegenPerSecond));
 
     var horizontal = Input.GetAxis("Horizontal");
@@ -76,6 +72,10 @@ public class Player : MonoBehaviour {
   }
 
   void Update() {
+    if (Input.GetKeyDown("t")) {
+      SceneManager.LoadScene("Title");
+    }
+
     var scale = transform.localScale;
     if ((direction.x > 0.01 || direction.x < -0.01) && Mathf.Sign(direction.x) != Mathf.Sign(scale.x)) {
       scale.x = -scale.x;
