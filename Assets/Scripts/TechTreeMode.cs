@@ -115,6 +115,17 @@ public class TechTreeNode {
           { "Arm Front Fin", "Starter Arm Front Fin" },
           { "Arm Back Fin", "Starter Arm Back Fin" },
         },
+        children = new[] {
+          new TechTreeNode {
+            name = "Better Fins",
+            prefabs = new Dictionary<string, string> {
+              { "Tail", "Better Tail" },
+              { "Dorsal Fin", "Better Dorsal Fin" },
+              { "Arm Front Fin", "Better Arm Front Fin" },
+              { "Arm Back Fin", "Better Arm Back Fin" },
+            },
+          },
+        },
       },
       new TechTreeNode {
         name = "Longer Tail",
