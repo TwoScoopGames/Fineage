@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: ca80ac385a05e43e2a3378aaa7cc522d
-timeCreated: 1517166497
-licenseType: Free
-=======
-guid: 45c70b9157c204c118b450c6bfb93a5a
-timeCreated: 1517165767
+guid: 7ce53713064474c5fa88e16574dedb13
+timeCreated: 1517179523
 licenseType: Pro
->>>>>>> update title screen
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -77,14 +71,7 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
-<<<<<<< HEAD
-  spritePackingTag: 
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-=======
   spritePackingTag:
   userData:
   assetBundleName:
   assetBundleVariant:
->>>>>>> update title screen
