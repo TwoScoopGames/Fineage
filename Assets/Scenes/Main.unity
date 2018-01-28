@@ -229,7 +229,7 @@ Prefab:
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 598364283}
+      objectReference: {fileID: 679375913}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 010cb32fa38cb43c1b20ddfc25e34bf3, type: 2}
   m_IsPrefabParent: 0
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 570287867}
   - component: {fileID: 570287866}
   m_Layer: 0
-  m_Name: main
+  m_Name: background Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,7 +262,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -415,7 +415,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &598364283
+--- !u!43 &679375913
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
