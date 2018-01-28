@@ -180,7 +180,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 'Head 2
+
+'
 --- !u!222 &712063
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -199,7 +201,7 @@ GameObject:
   - component: {fileID: 32238745}
   - component: {fileID: 32238744}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Body 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -365,7 +367,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Body 1
 --- !u!222 &115592708
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -480,7 +482,7 @@ GameObject:
   - component: {fileID: 524739425}
   - component: {fileID: 524739424}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Respiratory 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,7 +593,7 @@ GameObject:
   - component: {fileID: 544266046}
   - component: {fileID: 544266045}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: Head 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,7 +746,7 @@ GameObject:
   - component: {fileID: 669261161}
   - component: {fileID: 669261160}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Head 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -915,7 +917,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Tail 2
 --- !u!222 &830288247
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1057,7 +1059,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Respiratory 1
 --- !u!222 &1100429481
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1114,14 +1116,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 803276010}
-  respiratoryButton1: {fileID: 0}
-  respiratoryButton2: {fileID: 0}
-  bodyButton1: {fileID: 0}
-  bodyButton2: {fileID: 0}
-  headButton1: {fileID: 0}
-  headButton2: {fileID: 0}
-  tailButton1: {fileID: 0}
-  tailButton2: {fileID: 0}
+  respiratoryButton1: {fileID: 524739424}
+  respiratoryButton2: {fileID: 1495033412}
+  bodyButton1: {fileID: 32238744}
+  bodyButton2: {fileID: 1471942087}
+  headButton1: {fileID: 669261160}
+  headButton2: {fileID: 544266045}
+  tailButton1: {fileID: 1478795679}
+  tailButton2: {fileID: 1407082648}
 --- !u!1 &1304289291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,7 +1272,7 @@ GameObject:
   - component: {fileID: 1407082649}
   - component: {fileID: 1407082648}
   m_Layer: 5
-  m_Name: Button (7)
+  m_Name: Tail 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1381,7 +1383,7 @@ GameObject:
   - component: {fileID: 1471942088}
   - component: {fileID: 1471942087}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Body 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1492,7 +1494,7 @@ GameObject:
   - component: {fileID: 1478795680}
   - component: {fileID: 1478795679}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: Tail 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1603,7 +1605,7 @@ GameObject:
   - component: {fileID: 1495033413}
   - component: {fileID: 1495033412}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Respiratory 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1769,7 +1771,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Head 1
 --- !u!222 &1513187319
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1939,7 +1941,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Respiratory 2
 --- !u!222 &1853459568
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2244,7 +2246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Tail 1
 --- !u!222 &1900113761
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2318,7 +2320,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 'Body 2
+
+'
 --- !u!222 &1901315550
 CanvasRenderer:
   m_ObjectHideFlags: 0

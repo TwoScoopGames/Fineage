@@ -6,10 +6,10 @@ public class GameManager : MonoBehaviour {
 
   public GameObject playerPrefab;
 
-  private TechTreeNode body;
-  private TechTreeNode head;
-  private TechTreeNode gills;
-  private TechTreeNode tail;
+  public TechTreeNode body;
+  public TechTreeNode head;
+  public TechTreeNode respiratory;
+  public TechTreeNode tail;
 
   void Start() {
     DontDestroyOnLoad(gameObject);
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour {
   public void StartOver() {
     body = TechTreeNode.firstBody;
     head = TechTreeNode.firstHead;
-    gills = TechTreeNode.firstGills;
+    respiratory = TechTreeNode.firstRespiratory;
     tail = TechTreeNode.firstTail;
   }
 
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour {
 
     body.Spawn(player, playerComponent);
     head.Spawn(player, playerComponent);
-    gills.Spawn(player, playerComponent);
+    respiratory.Spawn(player, playerComponent);
     tail.Spawn(player, playerComponent);
 
     return player;

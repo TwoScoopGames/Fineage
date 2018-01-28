@@ -38,7 +38,7 @@ public class TechTreeNode {
     }
   };
 
-  public static readonly TechTreeNode firstGills = new TechTreeNode {
+  public static readonly TechTreeNode firstRespiratory = new TechTreeNode {
     prefabs = new Dictionary<string, string> { { "Gills", "Starter Gills" } },
     children = new[] {
       new TechTreeNode {
