@@ -8,6 +8,8 @@ public class GameManager {
   public TechTreeNode head;
   public TechTreeNode respiratory;
   public TechTreeNode tail;
+  public string previousName;
+  public string currentName;
 
   private static readonly GameManager instance = new GameManager();
 
@@ -29,6 +31,9 @@ public class GameManager {
   }
 
   public GameObject SpawnPlayer() {
+    previousName = currentName;
+    currentName = NameGenerator.Generate();
+
     var camera = GameObject.Find("Main Camera");
     var smoothCamera = camera.GetComponent<SmoothCamera2D>();
 

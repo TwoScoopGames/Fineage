@@ -130,6 +130,7 @@ public class Player : MonoBehaviour {
   protected void OnGUI()
   {
     GUI.skin.label.fontSize = Screen.width / 40;
+    GUILayout.Label(GameManager.Instance.currentName);
     GUILayout.Label(string.Format("Stamina: {0} / {1}", stamina, maxStamina));
     GUILayout.Label(string.Format("Health: {0}", health));
     GUILayout.Label(string.Format("Speed: {0}", speed));
